@@ -10,5 +10,7 @@ PVector Ballpos;
 
 void make () {
   image(Bball, Ballpos.x,Ballpos.y);
+  Bball.resize(35,0);
+  image(Bball, Ballpos.x,Ballpos.y);
 }
 }
