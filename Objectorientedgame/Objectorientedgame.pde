@@ -1,16 +1,17 @@
-Ball ball = new Ball(10,10,2,4); //constructs ball
+Ball ball = new Ball(40,40,3,5); //constructs ball
   PImage  Bball; //loads in image of ball
   
 void setup() {
   size(600,400);
+  imageMode(CENTER);
 Bball = loadImage("Ball.png");
-imageMode(CENTER);
+
 }
 
 void draw() {
   background (255);
   
-  ball.make();
-  ball.ballgo();
+
+  ball.exist();
   
 }

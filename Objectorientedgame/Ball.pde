@@ -11,6 +11,11 @@ PVector velocity;
   direction = 1;
   }
 
+void exist(){
+  balledges();
+  ballgo();
+  make();
+}
 
 void make () { //creates ball
   image(Bball, Ballpos.x,Ballpos.y);
@@ -20,5 +25,14 @@ void make () { //creates ball
  void ballgo() { //makes the ball move
     Ballpos.add(velocity.mult(direction));
   }
+  
+  void balledges () { //collides with edges
+    if((Ballpos.x+17.5) >= width || (Ballpos.x-17.5) < 0) {
+      velocity.x = velocity.x* -1;
+    }
+     if((Ballpos.y+17.5) >= height || (Ballpos.y-17.5) < 0) {
+      velocity.y = velocity.y* -1;
+  }
 
+}
 }
