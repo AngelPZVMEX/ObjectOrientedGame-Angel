@@ -25,7 +25,7 @@ if(frameCount % 5 ==0) {
   idleFrame = (idleFrame+1) % ryuIdle.length;
 }
 
-image(ryuIdle[idleFrame], 200,200);
+image(ryuIdle[idleFrame], 130,230);
   
   
 }
