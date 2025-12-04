@@ -3,16 +3,17 @@ class Ball {
 //initializing variables
   PVector Ballpos; //the balls position
   PVector velocity; //the balls velocity
-  int direction;
   float speed;
   float gravity = .6; //gravity on the ball
   float angle = random(15,90);
+  float v;
+  float theta;
 
   Ball(float x, float y, float speed, float falling, float angle) {
     Ballpos = new PVector(x, y); // makes position pvector
     velocity = new PVector(speed*cos(angle), falling*cos(angle)); //makes velocity pvector
-    direction = -1; 
-    
+    theta = radians(angle);
+    v =sqrt(1962*gravity/(sin(theta*2)));
     
   }
 

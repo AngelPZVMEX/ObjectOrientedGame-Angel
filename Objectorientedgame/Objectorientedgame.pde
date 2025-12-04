@@ -1,4 +1,4 @@
-Ball ball = new Ball(500, 150, -12, -7, random(15, 90)); //constructs ball
+Ball ball = new Ball(500, 150, -12, -7, random(10, 80)); //constructs ball
 PImage  Bball; //loads in image of ball
 PVector ryuPos;
 float ballR = 17.5;
@@ -17,4 +17,8 @@ void draw() {
 
 
   ball.exist();
+  
+  if(ball.Ballpos.x >= (ryuPos.x-39) && ball.Ballpos.x <= (ryuPos.x+39)){
+    
+  }
 }
