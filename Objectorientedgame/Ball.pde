@@ -12,8 +12,8 @@ class Ball {
   Ball(float x, float y, float speed, float falling, float angle) {
     Ballpos = new PVector(x, y); // makes position pvector
     velocity = new PVector(speed*cos(angle), falling*cos(angle)); //makes velocity pvector
-    theta = radians(angle);
-    v =sqrt(1962*gravity/(sin(theta*2)));
+    //theta = radians(angle);  //attempt at making a parabola
+    //v =sqrt((Ballpos.x-150)*gravity/(sin(theta*2)));
     
   }
 
@@ -37,7 +37,7 @@ class Ball {
     if ((Ballpos.x+17.5) >= width || (Ballpos.x-17.5) < 0) {
       velocity.x = velocity.x* -1;
     }
-    if ((Ballpos.y+17.5) >= height || (Ballpos.y-17.5) < 0) {
+    if ((Ballpos.y+17.5) >= 300+55.5 || (Ballpos.y-17.5) < 0) {
       velocity.y = velocity.y* -1;
     }
   }
