@@ -10,6 +10,9 @@ Bball = loadImage("Ball.png");
 
 void draw() {
   background (255);
+  rectMode(CENTER);
+  stroke(0);
+  rect(150,300,70,140);
   
 
   ball.exist();
