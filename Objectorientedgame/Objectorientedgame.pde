@@ -4,7 +4,7 @@ PImage ryuParry[];
 PImage stage;
 int idleFrame;
 int parryFrame;
-int parryTime;
+int parryTime = 0;
 
 void setup() {
   size(600,400);
@@ -35,6 +35,16 @@ if(frameCount % 5 ==0) {
 }
 
 image(ryuIdle[idleFrame], 150,300);
-  
+
+
   
 }
+
+  
+  void keyPressed(){
+    if(frameCount % 5 ==0) {
+  parryFrame = (parryFrame+1) % ryuParry.length;
+}
+
+image(ryuParry[parryFrame], 150,300);
+  }
