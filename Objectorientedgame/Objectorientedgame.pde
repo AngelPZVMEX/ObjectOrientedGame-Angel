@@ -66,7 +66,7 @@ image(ryuIdle[idleFrame], 150,300);
 
   }
   
-   if(ball.Ballpos.x >= (ryuPos.x-39) && ball.Ballpos.x <= (ryuPos.x+39) && ball.Ballpos.y > (ryuPos.y-105) && ball.Ballpos.y < (ryuPos.y+105)){
+   if(ball.Ballpos.x >= (ryuPos.x-39) && ball.Ballpos.x <= (ryuPos.x+39) && ball.Ballpos.y < (ryuPos.y-105) && ball.Ballpos.y > (ryuPos.y+105)){
     ball.velocity.y= ball.velocity.y*-1;
 
   }
