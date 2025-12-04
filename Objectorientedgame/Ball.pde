@@ -40,7 +40,4 @@ class Ball {
       velocity.y = velocity.y* -1;
     }
   }
-void collide(){
-    
-  }
 }
