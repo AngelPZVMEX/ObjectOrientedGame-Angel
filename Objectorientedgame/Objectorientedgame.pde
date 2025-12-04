@@ -4,6 +4,8 @@ PImage ryuParry[];
 PImage stage;
 int idleFrame;
 int parryFrame;
+int parryTime;
+
 void setup() {
   size(600,400);
   
