@@ -25,14 +25,14 @@ void setup() {
 void draw() {
   background (255);
   stage.resize(0,400);
-  
-  image(stage,-200,0);
+  image(stage,250,200);
+imageMode(CENTER);
 
 if(frameCount % 5 ==0) {
   idleFrame = (idleFrame+1) % ryuIdle.length;
 }
 
-image(ryuIdle[idleFrame], 130,230);
+image(ryuIdle[idleFrame], 150,300);
   
   
 }
